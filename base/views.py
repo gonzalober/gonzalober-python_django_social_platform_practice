@@ -3,10 +3,9 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-from .models import Message, Room, Topic
+from .models import Message, Room, Topic, User
 from .forms import RoomForm, UserForm
 
 
@@ -175,7 +174,7 @@ def updateUser(req):
     form = UserForm(instance=user)
 
     if req.method == "POST":
-        form = UserForm(req.POST, instance=user)
+        form = UserForm(req.POST, req.FILES, instance=user)
         if form.is_valid():
             form.save()
             return redirect("user-profile", pk=user.id)
