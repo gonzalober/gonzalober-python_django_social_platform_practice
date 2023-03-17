@@ -1,8 +1,7 @@
 {% extends 'main.html' %} 
 
 {% block content %}
-
-
+{% load static %}
 <body>
   <main class="profile-page layout layout--3">
     <div class="container">
@@ -15,9 +14,17 @@
       <div class="roomList">
         <div class="profile">
           <div class="profile__avatar">
+            {% if request.user.avatar.url %}
+            <h1>FELI</h1>
             <div class="avatar avatar--large active">
               <img src="{{user.avatar.url}}" />
             </div>
+            {% else %}
+            <h1>ELSEEEEEE</h1>
+            <div class="avatar avatar--large active">
+              <img src="{% static 'images/avatar.svg' %}" />
+            </div>
+            {% endif %}
           </div>
           <div class="profile__info">
             <h3>{{user.username}}</h3>
