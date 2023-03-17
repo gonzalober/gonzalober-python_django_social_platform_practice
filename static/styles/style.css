@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #c271dd;
+  --color-main: #c9a8d4;
   --color-main-light: #e1f6fb;
   --color-dark: #543f5664;
-  --color-dark-medium: #51546e;
-  --color-dark-light: #9cb3c1;
+  --color-dark-medium: #efdaf7b0;
+  --color-dark-light: #f4eef58f;
   --color-light: #e5e5e5;
-  --color-gray: #8b8b8b;
-  --color-light-gray: #b2bdbd;
-  --color-bg: linear-gradient(to bottom right, #ac0081, #dea367, #ff3399);
+  --color-gray: #3646d6b0;
+  --color-light-gray: #94e2e2;
+  --color-bg: linear-gradient(to bottom right, #ac0081, #c9935c, #ff3399);
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -233,7 +233,7 @@ a {
 }
 
 .dropdown-menu a:hover {
-  background-color: var(--color-dark-medium);
+  background-color: #b7814c;
 }
 
 .dropdown-menu > a:not(:last-child) {
@@ -456,7 +456,7 @@ a {
 .layout__boxTitle svg {
   width: 1.6rem;
   height: 1.6rem;
-  fill: var(--color-main);
+  fill: #743059;
 }
 
 .layout__body {
