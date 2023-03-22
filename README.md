@@ -6,13 +6,11 @@ Please take a look to the [Please view the demo HERE!](https://youtu.be/dByv07HM
 
 ## Run the project
 
-- install Python
-- two options of installing django:
-  - pip install django (globally).
-  - vitualenv -> option chosen for this project.
-- pip install virtualenv
-- virtualenv env
-- source env/bin/activate
-- pip install django
-- django-admin startmyproject projectname
-- python manage.py runserver -> click on the port link
+To start running the project, follow these steps:
+
+1. Install Python on your computer.
+2. Choose one of two options to install Django:
+   - Option 1: Install Django globally by running "pip install django" in the command line.
+   - Option 2: Install Django locally for this project by setting up a virtual environment. To do this, run "pip install virtualenv" in the command line, then create a virtual environment by running "virtualenv env". Activate the virtual environment by running "source env/bin/activate" and then install Django by running "pip install django".
+3. Use Django to create a new project by running "django-admin startproject projectname" in the command line.
+4. Finally, start the server by running "python manage.py runserver" and click on the port link to access the project.
