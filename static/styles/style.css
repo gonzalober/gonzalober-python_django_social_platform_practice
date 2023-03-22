@@ -6,6 +6,7 @@
   --color-dark: #543f5664;
   --color-dark-medium: #efdaf7b0;
   --color-dark-light: #f4eef58f;
+  --color-dark-light-aa: #928e938f;
   --color-light: #e5e5e5;
   --color-gray: #3646d6b0;
   --color-light-gray: #94e2e2;
@@ -1109,7 +1110,7 @@ a {
 
 .room__message > form > input {
   resize: none;
-  background-color: var(--color-dark-light);
+  background-color: var(--color-dark-light-aa);
   color: var(--color-light);
   border: none;
   outline: none;
