@@ -6,4 +6,13 @@ Please take a look to the [Please view the demo HERE!](https://youtu.be/dByv07HM
 
 ## Run the project
 
-## Screenshots
+- install Python
+- two options of installing django:
+  - pip install django (globally).
+  - vitualenv -> option chosen for this project.
+- pip install virtualenv
+- virtualenv env
+- source env/bin/activate
+- pip install django
+- django-admin startmyproject projectname
+- python manage.py runserver -> click on the port link
