@@ -20,7 +20,6 @@
               <img src="{{user.avatar.url}}" />
             </div>
             {% else %}
-            <h1>ELSEEEEEE</h1>
             <div class="avatar avatar--large active">
               <img src="{% static 'images/avatar.svg' %}" />
             </div>
@@ -36,7 +35,7 @@
           <div class="profile__about">
             <h3>About</h3>
             <p>
-             About?
+             {{user.bio}}
             </p>
           </div>
         </div>

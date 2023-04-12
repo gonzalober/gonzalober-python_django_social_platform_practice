@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #c9a8d4;
+  --color-main: #ff69b4; /* bright pink */
+  --color-main-2: #a15893;
   --color-main-light: #e1f6fb;
-  --color-dark: #543f5664;
+  --color-dark: #4a4949; /* dark gray */
   --color-dark-medium: #efdaf7b0;
-  --color-dark-light: #f4eef58f;
-  --color-dark-light-aa: #928e938f;
-  --color-light: #e5e5e5;
-  --color-gray: #3646d6b0;
-  --color-light-gray: #94e2e2;
-  --color-bg: linear-gradient(to bottom right, #ac0081, #c9935c, #ff3399);
-  --color-success: #5dd693;
-  --color-error: #fc4b0b;
+  --color-dark-light: #fccde2; /* light pink */
+  --color-dark-light-aa: #928e93;
+  --color-light: #fff; /* white */
+  --color-gray: #999; /* medium gray */
+  --color-light-gray: #c7ecee; /* light blue */
+  --color-bg: linear-gradient(
+    to bottom right,
+    #ff69b4,
+    #ffb6c1,
+    #ff8c00
+  ); /* pink to orange gradient */
+  --color-success: #2ecc71; /* green */
+  --color-error: #e74c3c; /* red */
 }
 
 /*========== base styles ==========*/
@@ -29,12 +35,12 @@
 }
 
 html {
-  font-size: 56.25%;
+  font-size: 62.5%;
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 62.5%;
+    font-size: 70%;
   }
 }
 
@@ -48,7 +54,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-size: 1.5rem;
-  color: var(--color-light-gray);
+  color: var(--color-dark);
   background-image: var(--color-bg);
   min-height: 100vh;
 }
@@ -87,7 +93,7 @@ a {
 .btn--link {
   border-radius: 0;
   padding: 0;
-  color: var(--color-main);
+  color: var(--color-main-2);
   box-shadow: none;
 }
 
@@ -269,6 +275,7 @@ a {
 .header {
   padding: 1.5rem;
   background-color: var(--color-dark);
+  height: 100%;
 }
 
 .header > .container {
@@ -582,7 +589,8 @@ a {
 
 .topics__list li a.active,
 .topics__list li a:hover {
-  color: var(--color-main);
+  color: var(--color-light-gray);
+  transition: all 0.3s ease-in-out;
 }
 
 .topics__list li a span {
@@ -767,10 +775,11 @@ a {
 
 .activities__boxContent {
   margin-left: 4.2rem;
+  font-size: 1.4rem;
 }
 
-.activities__boxContent {
-  font-size: 1.4rem;
+.activities__boxContent p {
+  color: #ffb6c1;
 }
 
 .activities__boxContent a:hover {

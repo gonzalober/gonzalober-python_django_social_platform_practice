@@ -19,7 +19,7 @@ def loginPage(request):
         username = request.POST.get('username').lower()
         password = request.POST.get('password')
         try:
-            user = User.objects.get(username=username)
+            user = User.objects.get(email=username)
         except:
             messages.error(request, "User doesn't exist")
         user = authenticate(request, username=username, password=password)
